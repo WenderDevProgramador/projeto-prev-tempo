@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+
+
+}
+
+
+body {
+    
+    background-image: url(../img/pexels-photo-417074.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal {
+    width: 95%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    opacity: 0.9;
+    color: #fff;
+    
+}
+
+#cidade {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 1.3em;
+    background-color: #ffffff3a;
+    color: #fff;
+    width: calc(100% - 60px);
+
+}
+
+.botão-busca {
+   border: none;
+   outline: none;
+   padding: 10px;
+   border-radius: 50%;
+   background-color: #ffffff3a;
+   cursor: pointer;
+   float: right;
+}
+
+.img-busca {
+    width: 30px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.dados-um {
+    display: flex;
+    align-items: center;
+}
+
+.previsão, .img-previsão , .temp {
+    margin: 15px;
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+
+
+
+.temp {
+    font-size: 1.4em;
+
+}
+
+.umidade {
+    margin-top: 20px;
+}
+
