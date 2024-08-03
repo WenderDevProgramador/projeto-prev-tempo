@@ -10,15 +10,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 </head>
-<body class="fundo" onload="carregar()">
+<body class="fundo" onload="trocarImagem()">
     <main class="principal">
         <input  type="text" name="cidade" id="cidade" placeholder="Digite o nome da cidade" >
         <button type="button" class="botão-busca" onclick="cliqueiNoBotao()">
             <img src="img/find.svg" alt="Lupa" class="img-busca">
         </button>
 
+        <div id="msg">
+
+        </div>
+
         <h2 id="tela-cid">Tempo em sua cidade</h2>
-        <p class="temp" >21ºC</p>
+        <p class="temp" >Temperatura: </p>
         <section class="dados-um">
             
             

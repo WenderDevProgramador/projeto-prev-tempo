@@ -33,6 +33,11 @@ body {
     
 }
 
+#msg {
+    
+    margin-top: 20px;
+}
+
 #cidade {
     border: none;
     outline: none;
@@ -75,6 +80,10 @@ h2 {
     margin: 15px;
     text-transform: capitalize;
     font-size: 1.4em;
+}
+
+.img-previsão {
+    width: 100px;
 }
 
 
