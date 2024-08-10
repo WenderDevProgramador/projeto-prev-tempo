@@ -3,23 +3,23 @@ const key = '0cc3e15ba2a0b66a17bdc8bf8b31e503'
 
 function trocarImagem() {
     let msg = window.document.querySelector('div#msg')
-    
+
     let data = new Date()
     let hora = data.getHours()
-    msg.innerHTML = `` 
+    msg.innerHTML = ``
     if (hora >= 0 && hora < 12) {
         //Bom Dia
-        msg.innerHTML = `Bom Dia!`  
-        document.body.style.backgroundImage = "url('../img/manha.jpg')";
-        
+        msg.innerHTML = `Bom Dia!`
+        document.body.style.backgroundImage = "url('./img/manha.jpg')";
+
     } else if (hora > 12 && hora < 18) {
         //Boa Tarde
         msg.innerHTML = `Boa tarde!`
-        document.body.style.backgroundImage = "url('../img/Tarde.jpg')";
-        
+        document.body.style.backgroundImage = "url('./img/Tarde.jpg')";
+
     } else {
         msg.innerHTML = `Boa Noite!`
-        document.body.style.backgroundImage = "url('../img/Noite.jpg')";
+        document.body.style.backgroundImage = "url('./img/Noite.jpg')";
     }
 }
 
@@ -34,10 +34,10 @@ function colocarDadosTela(dados) {
 
 async function buscarCidade(cidade) {
     const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${key}&lang=pt_br&units=metric`).then(resposta => resposta.json())
-    
-    
+
+
     colocarDadosTela(dados)
-    
+
 }
 
 function cliqueiNoBotao() {
